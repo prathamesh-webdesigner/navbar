@@ -1,0 +1,312 @@
+@font-face {
+    font-family: nexa;
+    src: url(../fonts/NexaRegular.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: nexa;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Home Page
+// home banner area
+.white_patch_details {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: -6rem;
+    z-index: 9;
+    position: relative;
+    padding: 20px 20px;
+}
+
+.underBannerDetails {
+    h1 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    button {
+        background-color: #00aae2;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+    }
+}
+.banner_right_bottom_rows_heading {
+    h2 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    button {
+        background-color: #00aae2;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+    }
+}
+.Home_heading_20px {
+    font-size: 20px;
+    font-weight: bold;
+}
+.sport_section_subCard_area {
+    img {
+        height: 160px;
+        object-fit: cover;
+    }
+}
+.sports_home_page_div {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 7px;
+    position: relative;
+    border-bottom: 4px solid #d0d0d0;
+    &::before {
+        position: absolute;
+        background: #f9a22b;
+        height: 4px;
+        content: "";
+        width: 50px;
+        bottom: -4px;
+        left: 0;
+    }
+}
+.progress {
+    display: flex;
+    height: 2rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    flex-direction: row;
+    .progress-bar {
+        background-color: #f9b81c;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+    .cheking_polls {
+        margin-top: 7px;
+    }
+}
+.home_quiz {
+    img {
+        height: 90px;
+        object-fit: cover;
+    }
+}
+.quiz_btn {
+    background-color: #00aae2;
+    font-size: 14px;
+    border: navajowhite;
+    padding: 5px 20px 2px 20px;
+}
+.quiz_btn2 {
+    background-color: #f37b20;
+}
+.quiz_btn3 {
+    background-color: #a4282d;
+}
+.polls_left_border {
+    border-left: 4px solid #000000;
+    h2 {
+        position: relative;
+        top: 4px;
+        left: 4px;
+    }
+}
+#multiple_blogs_articles {
+    .card {
+        transition: 0.3s all;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0px 0px 10px 1px #00000057;
+        }
+    }
+    button {
+        background-color: #572e60;
+        border: none;
+        border: 1px solid #572e60;
+        color: #fff;
+        padding: 4px 10px 0px 10px;
+        transition: 0.3s all;
+        &:hover {
+            background: transparent;
+            border: 1px solid #000;
+            border-radius: 5px;
+            color: #000;
+        }
+    }
+    img {
+        height: 200px;
+        object-fit: cover;
+    }
+    .multiple_blogs_articles_Sports_button {
+        background-color: #853b95;
+        border: 1px solid #853b95;
+        &:hover {
+            border: 1px solid #853b95;
+            color: #853b95;
+        }
+    }
+    .multiple_blogs_articles_media_button {
+        background-color: #e13240;
+        border: 1px solid #e13240;
+        &:hover {
+            border: 1px solid #e13240;
+            color: #e13240;
+        }
+    }
+    .multiple_blogs_articles_Politics_button {
+        background-color: #572e60;
+        border: 1px solid #572e60;
+        &:hover {
+            border: 1px solid #572e60;
+            color: #572e60;
+        }
+    }
+}
+#overlap_div_design {
+    .orang_div_overlap {
+        background-color: #f9a22b;
+        color: #fff;
+        width: 50%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 23rem;
+        .orange_box_text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2 {
+                text-align: center;
+                position: relative;
+                color: #a4282d;
+                font-size: 14px;
+                width: 60%;
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 60px;
+                    height: 2px;
+                    background: #a4282d;
+                    left: 60px;
+                    top: 31%;
+                    position: absolute;
+                }
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 60px;
+                    height: 2px;
+                    background: #a4282d;
+                    right: 60px;
+                    top: 31%;
+                    position: absolute;
+                }
+            }
+            p {
+                font-size: 34px;
+                text-align: center;
+                width: 70%;
+            }
+        }
+        .blog_left_border {
+            border-left: 4px solid #fff;
+            padding-left: 10px;
+            h2 {
+                position: relative;
+                top: 4px;
+            }
+        }
+    }
+    .img_div_overlap {
+        width: 50%;
+        margin-left: -6rem;
+        margin-top: 6rem;
+        border: 10px solid #fff;
+        padding: 0;
+    }
+}
+#sliding_cards {
+    .card {
+        border: none;
+        cursor: pointer;
+        transition: 0.3s all;
+        img {
+            height: 160px;
+            object-fit: cover;
+        }
+        &:hover {
+            box-shadow: 0 0 5px 4px #0000004d;
+        }
+    }
+}
+@media only screen and (max-width: 990px) {
+    .white_patch_details{
+        margin-top: -3rem;
+    }
+    .homeBanner_image {
+        margin-bottom: 1.5rem;
+    }
+    .home_quiz img{
+        height: 100%;
+    }
+    #overlap_div_design .orang_div_overlap{
+        width: 100%;
+    }
+    #overlap_div_design .orang_div_overlap .orange_box_text h2::before{
+        left: -26px;
+    }
+    #overlap_div_design .orang_div_overlap .orange_box_text h2::after{
+        right: -26px;
+    }
+    #overlap_div_design .orang_div_overlap .orange_box_text p {
+        font-size: 22px;
+        text-align: center;
+        width: 100%;
+    }
+    #multiple_blogs_articles .card{
+        text-align: center;
+    }
+    .orange_box_text{
+        margin-top: 30px;
+    }
+    #overlap_div_design .orang_div_overlap{
+        height: 18rem;
+    }
+    #overlap_div_design .img_div_overlap {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        padding: 0;
+    }
+    .img_div_overlap img {
+        margin-top: -4rem;
+    }
+    .banner_right_bottom_rows_heading h2{
+        font-size: 18px;
+    }
+    .banner_right_bottom_rows_heading button, .underBannerDetails button{
+        font-size: 12px;
+    }
+}

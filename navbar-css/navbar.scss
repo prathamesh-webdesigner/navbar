@@ -1,0 +1,310 @@
+@font-face {
+    font-family: nexa;
+    src: url(../fonts/NexaRegular.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: nexa;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logoCannyCast {
+    img {
+        width: 30%;
+        cursor: pointer;
+    }
+}
+.menuArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.socialIcons {
+    display: flex;
+    font-size: 22px;
+    cursor: pointer;
+    color: #8b7f7f;
+    transition: 0.3s all;
+    i:hover {
+        color: #000;
+        transform: scale(1.2);
+    }
+}
+.contactUs {
+    display: flex;
+    justify-content: end;
+    button {
+        border: none;
+        background-color: #4f4f4f;
+        color: #fff;
+        padding: 10px 20px 6px 20px;
+        border-radius: 5px;
+        transition: 0.3s all;
+        &:hover {
+            background-color: #000;
+        }
+        &:hover {
+            background-color: transparent;
+            border: 1px solid #4f4f4f;
+            color: #4f4f4f;
+        }
+    }
+}
+.menu_items {
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        li {
+            padding: 15px 15px;
+            cursor: pointer;
+            a {
+                color: #fff;
+                font-size: 18px;
+                padding-bottom: 8px;
+                // &:hover {
+                //     border-bottom: 5px solid #f9a22b;
+                // }
+            }
+        }
+    }
+}
+.Sports_dropdrown {
+    h2 {
+        text-decoration: none;
+        position: relative;
+        font-size: 24px;
+        &::after {
+            content: "";
+            width: 30%;
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            border-width: 0 0 1px;
+            border: 2px solid #e13240;
+        }
+    }
+}
+.Sports_related_submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 15px;
+    z-index: 9;
+    background-color: #000000;
+}
+.sports_page {
+    transition: 0.3s;
+}
+
+.sports_page:hover .sports_a_tag_hover {
+    border-bottom: 3px solid #00a9e1;
+}
+
+.sports_page:hover .game_a_tag_hover {
+    border-bottom: 3px solid #572e60;
+}
+.sports_page:hover .media_a_tag_hover {
+    border-bottom: 3px solid #006291;
+}
+.sports_page:hover .lifestyle_a_tag_hover {
+    border-bottom: 3px solid #853b95;
+}
+.sports_page:hover .fashion_a_tag_hover {
+    border-bottom: 3px solid #f9a22b;
+}
+.sports_page:hover .tech_a_tag_hover {
+    border-bottom: 3px solid #a4282d;
+}
+.sports_page:hover .politics_a_tag_hover {
+    border-bottom: 3px solid #f37b20;
+}
+.sports_page:hover .menu_items ul li a {
+    border-bottom: 5px solid #f9a22b;
+}
+// .sports_page:hover .Sports_related_submenu {
+//     display: block;
+// }
+.sport_news_in_row {
+    display: flex;
+    transition: 0.3s;
+    img {
+        width: 35%;
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+.game_diff_border ul li {
+    border-bottom: 1px solid #572e60 !important;
+}
+.media_diff_border ul li {
+    border-bottom: 1px solid #006291 !important;
+}
+.lifestyle_diff_border ul li {
+    border-bottom: 1px solid #853b95 !important;
+}
+.fashion_diff_border ul li {
+    border-bottom: 1px solid #f9a22b !important;
+}
+.tech_diff_border ul li {
+    border-bottom: 1px solid #a4282d !important;
+}
+.politics_diff_border ul li {
+    border-bottom: 1px solid #f37b20 !important;
+}
+// Mobile Menu
+.blog_mobile_ul {
+    margin-top: 1rem;
+    li {
+        border-bottom: 1px solid #0000004a;
+        a {
+            color: #000 !important;
+        }
+    }
+    .dropdown-menu.show {
+        background: floralwhite;
+    }
+}
+.submenu_for_all_pages {
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        li {
+            padding: 4px 0;
+            border-bottom: 1px solid #00a9e1;
+            transition: 0.3s all;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.related_articles_for_all_pages {
+    .submenus_new_cards {
+        .submenu_card_hover {
+            transition: 0.3s all;
+            img {
+                height: 130px;
+                object-fit: cover;
+            }
+            &:hover {
+                box-shadow: 0px 0px 7px 2px #fff;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        overflow-x: hidden;
+        transition: 0.5s;
+        ul {
+            width: 93%;
+            margin: 0 auto;
+            li {
+                border-bottom: 1px solid #1f1f1f;
+            }
+        }
+        a {
+            padding: 10px 0;
+            text-decoration: none;
+            color: #818181;
+            transition: 0.3s;
+            display: flex;
+            justify-content: space-between;
+            &:hover {
+                color: #f1f1f1;
+            }
+        }
+        .closebtn {
+            position: absolute;
+            top: 14px;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+    }
+
+    .dropdown-toggle::after {
+        display: none;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+    .sports_mobile_border li {
+        border-bottom: 2px solid #00a9e1 !important;
+    }
+    .game_mobile_border li {
+        border-bottom: 2px solid #572e60 !important;
+    }
+    .media_mobile_border li {
+        border-bottom: 2px solid #006291 !important;
+    }
+    .lifestyle_mobile_border li {
+        border-bottom: 2px solid #853b95 !important;
+    }
+    .Fashion_mobile_border li {
+        border-bottom: 2px solid #f9a22b !important;
+    }
+    .Tech_mobile_border li {
+        border-bottom: 2px solid #a4282d !important;
+    }
+    .politics_mobile_border li {
+        border-bottom: 2px solid #f37b20 !important;
+    }
+}
+.dropdown-menu {
+    position: relative;
+    background-color: #000000;
+}
+
+#mobile_nav_header {
+    background-color: #000000;
+    .col-4 {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

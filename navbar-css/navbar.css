@@ -1,0 +1,382 @@
+@font-face {
+  font-family: nexa;
+  src: url(../fonts/NexaRegular.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: nexa;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logoCannyCast img {
+  width: 30%;
+  cursor: pointer;
+}
+
+.menuArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 22px;
+  cursor: pointer;
+  color: #8b7f7f;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.socialIcons i:hover {
+  color: #000;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.contactUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.contactUs button {
+  border: none;
+  background-color: #4f4f4f;
+  color: #fff;
+  padding: 10px 20px 6px 20px;
+  border-radius: 5px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.contactUs button:hover {
+  background-color: #000;
+}
+
+.contactUs button:hover {
+  background-color: transparent;
+  border: 1px solid #4f4f4f;
+  color: #4f4f4f;
+}
+
+.menu_items ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.menu_items ul li {
+  padding: 15px 15px;
+  cursor: pointer;
+}
+
+.menu_items ul li a {
+  color: #fff;
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+
+.Sports_dropdrown h2 {
+  text-decoration: none;
+  position: relative;
+  font-size: 24px;
+}
+
+.Sports_dropdrown h2::after {
+  content: "";
+  width: 30%;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  border-width: 0 0 1px;
+  border: 2px solid #e13240;
+}
+
+.Sports_related_submenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: 15px;
+  z-index: 9;
+  background-color: #000000;
+}
+
+.sports_page {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sports_page:hover .sports_a_tag_hover {
+  border-bottom: 3px solid #00a9e1;
+}
+
+.sports_page:hover .game_a_tag_hover {
+  border-bottom: 3px solid #572e60;
+}
+
+.sports_page:hover .media_a_tag_hover {
+  border-bottom: 3px solid #006291;
+}
+
+.sports_page:hover .lifestyle_a_tag_hover {
+  border-bottom: 3px solid #853b95;
+}
+
+.sports_page:hover .fashion_a_tag_hover {
+  border-bottom: 3px solid #f9a22b;
+}
+
+.sports_page:hover .tech_a_tag_hover {
+  border-bottom: 3px solid #a4282d;
+}
+
+.sports_page:hover .politics_a_tag_hover {
+  border-bottom: 3px solid #f37b20;
+}
+
+.sports_page:hover .menu_items ul li a {
+  border-bottom: 5px solid #f9a22b;
+}
+
+.sport_news_in_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sport_news_in_row img {
+  width: 35%;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.sport_news_in_row h4 {
+  font-size: 16px;
+}
+
+.sport_news_in_row:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.game_diff_border ul li {
+  border-bottom: 1px solid #572e60 !important;
+}
+
+.media_diff_border ul li {
+  border-bottom: 1px solid #006291 !important;
+}
+
+.lifestyle_diff_border ul li {
+  border-bottom: 1px solid #853b95 !important;
+}
+
+.fashion_diff_border ul li {
+  border-bottom: 1px solid #f9a22b !important;
+}
+
+.tech_diff_border ul li {
+  border-bottom: 1px solid #a4282d !important;
+}
+
+.politics_diff_border ul li {
+  border-bottom: 1px solid #f37b20 !important;
+}
+
+.blog_mobile_ul {
+  margin-top: 1rem;
+}
+
+.blog_mobile_ul li {
+  border-bottom: 1px solid #0000004a;
+}
+
+.blog_mobile_ul li a {
+  color: #000 !important;
+}
+
+.blog_mobile_ul .dropdown-menu.show {
+  background: floralwhite;
+}
+
+.submenu_for_all_pages ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.submenu_for_all_pages ul li {
+  padding: 4px 0;
+  border-bottom: 1px solid #00a9e1;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.submenu_for_all_pages ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.related_articles_for_all_pages .submenus_new_cards .submenu_card_hover {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.related_articles_for_all_pages .submenus_new_cards .submenu_card_hover img {
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.related_articles_for_all_pages .submenus_new_cards .submenu_card_hover:hover {
+  -webkit-box-shadow: 0px 0px 7px 2px #fff;
+          box-shadow: 0px 0px 7px 2px #fff;
+}
+
+@media only screen and (max-width: 990px) {
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .sidenav ul {
+    width: 93%;
+    margin: 0 auto;
+  }
+  .sidenav ul li {
+    border-bottom: 1px solid #1f1f1f;
+  }
+  .sidenav a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: #818181;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 14px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 990px) and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .sports_mobile_border li {
+    border-bottom: 2px solid #00a9e1 !important;
+  }
+  .game_mobile_border li {
+    border-bottom: 2px solid #572e60 !important;
+  }
+  .media_mobile_border li {
+    border-bottom: 2px solid #006291 !important;
+  }
+  .lifestyle_mobile_border li {
+    border-bottom: 2px solid #853b95 !important;
+  }
+  .Fashion_mobile_border li {
+    border-bottom: 2px solid #f9a22b !important;
+  }
+  .Tech_mobile_border li {
+    border-bottom: 2px solid #a4282d !important;
+  }
+  .politics_mobile_border li {
+    border-bottom: 2px solid #f37b20 !important;
+  }
+}
+
+.dropdown-menu {
+  position: relative;
+  background-color: #000000;
+}
+
+#mobile_nav_header {
+  background-color: #000000;
+}
+
+#mobile_nav_header .col-4 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#mobile_nav_header .col-4 ul li a {
+  color: #fff;
+}
+/*# sourceMappingURL=navbar.css.map */
